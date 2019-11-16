@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <title>Eleni's Dirt</title>
+  
+      </head>
+      <body>
+        {% block content %}
+        <h1>Eleni's Dirt</h1>
+        <nav>
+          <a href="/posts">Posts</a>
+        </nav>
+        {% endblock %}
+        <section><p>To improve sandy soil:
+          Work in 3 to 4 inches of organic matter such as well-rotted manure or finished compost.
+          Mulch around your plants with leaves, wood chips, bark, hay or straw. Mulch retains moisture and cools the soil.
+          Add at least 2 inches of organic matter each year.
+          Grow cover crops or green manures.</p>
+          <p>To improve clay soil:
+          Work 2 to 3 inches of organic matter into the surface of the soil. Then add at least 1 inch more each year after that.
+          Add the organic matter in the fall, if possible.
+          Use permanent raised beds to improve drainage and keep foot traffic out of the growing area.
+          Minimize tilling and spading.</p>
+          <p>To improve silty soil:
+          Add at least 1 inch of organic matter each year.
+          Concentrate on the top few inches of soil to avoid surface crusting.
+          Avoid soil compaction by avoiding unnecessary tilling and walking on garden beds.
+          Consider constructing raised beds.</p>
+          
+          <p>Home Garden Soil Tests $15 
+          includes pH, organic matter, available P, Mg, K, Ca, and Al; micro-nutrients (iron, manganese, copper, boron and sodium); effective CEC; and fertility recommendations</p>
+        </section>
+        
+        <a href="http://pss.uvm.edu/ag_testing/How_to_Take_a_Soil_Sample.pdf"> Click here for how to take a soil sample. </a>
+      </body>
+    </html>
