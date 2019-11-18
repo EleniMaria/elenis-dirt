@@ -17,4 +17,11 @@
 </nav>
 <br>
 <h1><a href="{% url 'post_list' %}">Homepage</a></h1>
+
+<!-- <h6>ID # {{comment.post.id}} + {{comment.id}}</h6>
+<h5>Comment Title:  {{ comment.title.pk }}</h5>
+<h5>Comment Author: {{ comment.author.pk }}</h5>
+<h5>Comment Body: {{ comment.body.pk}}</h5>
+<a href="{% url 'comment_edit' pk=post.id %}">Edit Comment</a>
+<a class="delete" href="{% url 'comment_delete' pk=post.id %}">Delete Comment</a> -->
 {% endblock %}

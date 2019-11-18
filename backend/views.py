@@ -38,13 +38,12 @@ def post_form(request):
         return render(request, 'post_form.html', {'form': form})
 
 #new/comment
-def comment_create(request, pk):
-    comment = Comment.objects.all()
+def comment_create(request):
     if request.method == 'POST':
         form = CommentForm(request.POST)
         if form.is_valid():
             comment = form.save()
-            return redirect('post_view')
+            return redirect('post_detail')
     else:
         form = CommentForm()
     return render(request, 'comment_form.html', {'form': form})
@@ -68,10 +67,10 @@ def comment_edit(request, pk):
         form = CommentForm(request.POST, instance=comment)
         if form.is_valid():
             post = form.save()
-            return redirect('comment_detail', pk=comment.pk)
+            return redirect('comment_view', pk=comment.pk)
     else:
         form = CommentForm(instance=comment)
-    return render(request, 'base.html')
+    return render(request, 'comment_form.html', {'form': form})
 
 #delete post
 def post_delete(request, pk):
