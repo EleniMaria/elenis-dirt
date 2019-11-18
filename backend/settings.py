@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',  # < As per whitenoise documentation
     'rest_framework',
-    'elenis-dirt',
     'backend'
 ]
 
