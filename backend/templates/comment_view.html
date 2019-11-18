@@ -1,0 +1,28 @@
+<!-- comment/id# -->
+{% extends 'base.html' %}{% block content %}
+<h1>Comment ID# {{ comment.id }}</h1>
+<ul>
+  <h3>Comment Author:</h3>
+  <p>{{ comment.author }}</p>
+  <h3>Comment Title:</h3>
+  <p>{{ comment.post }}</p>
+  <h3>Comment Body:</h3>
+  <p>{{ comment.body }}</p>
+
+  <h3>Factoid Title:</h3>
+  <p>{{ comment.post }}</p>
+
+  <h3>Factoid Author:</h3>
+  <p>{{ comment.post.author }}</p>
+
+  <h3>Factoid Content:</h3>
+  <p>{{ comment.post.body }}</p>
+</ul>
+<br />
+<nav>
+  <a href="{% url 'comment_edit' pk=comment.id %}">Edit Comment</a>
+  <a href="{% url 'comment_delete' pk=comment.id %}">Delete Comment</a>
+</nav>
+<br>
+<a href="{% url 'post_list' %}">Homepage</a>
+{% endblock %}

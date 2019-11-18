@@ -1,0 +1,29 @@
+[
+  {
+    "model": "backend.post",
+    "pk": 1,
+    "fields": {
+      "title": "Soil Life",
+      "author": "Eleni",
+      "body": "Worms."
+    }
+  },
+  {
+    "model": "backend.post",
+    "pk": 2,
+    "fields": {
+      "title": "Minerals",
+      "author": "Eleni",
+      "body": "Calcium is key for healthy tomato skins."
+    }
+  },
+  {
+    "model": "backend.post",
+    "pk": 3,
+    "fields": {
+      "title": "Organic Matter",
+      "author": "Eleni",
+      "body": "Compost"
+    }
+  }
+]

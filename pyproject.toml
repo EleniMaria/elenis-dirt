@@ -1,11 +1,12 @@
 [tool.poetry]
-name = "elenis-dirt"
+name = "django-react-boilerplate"
 version = "0.1.0"
 description = ""
 authors = ["Eleni-Maria <egoranites@hotmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+django = "^2.2"
 djangorestframework = "^3.10"
 whitenoise = "^4.1"
 gunicorn = "^20.0"

@@ -1,17 +1,19 @@
-{% block content %}
-post_detail.html
-<h1>Post # {{post.id}}</h1>
+<!-- posts/ID# -->
+{% extends 'base.html' %}{% block content %}
+<h1>Dirt Factoid # {{post.id}}</h1>
 <ul>
-<h3>Title: {{post.title}}</h3>
-<br>
-<h3>Body: {{post.body}}</h3>
-<br>
-<h3>Author: {{post.author}}</h3>
+  <h3>Title: {{post.title}}</h3>
+  <br />
+  <h3>Body: {{post.body}}</h3>
+  <br />
+  <h3>Author: {{post.author}}</h3>
 </ul>
-<br>
-<a href="">Delete Post</a>
-<a href="{% url 'post_form' %}">New Post</a>
+<br />
+<nav>
+  <a href="">Edit Post</a>
+  <a href="">Delete Post</a>
+  <a href="{% url 'post_form' %}">New Post</a>
 </nav>
-<br>
-<h1><a href="/">Homepage</a></h1>
+<br />
+<h1><a href="{% url 'post_list' %}">Homepage</a></h1>
 {% endblock %}

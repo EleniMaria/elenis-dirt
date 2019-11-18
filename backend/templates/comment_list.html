@@ -1,0 +1,27 @@
+<!-- /comments linked from  /posts-->
+{% extends 'base.html' %}{% block content %}
+<h1>Full Comments List</h1>
+<h6>Find newest comment last</h6>
+{% for comment in comments%}
+<h3>Comment Author: </h3>
+{{ comment.author }}
+  <br></br>
+<h3>Post Title: </h3>
+{{comment.post}}
+<h3>Comment Body: </h3>
+<p>{{ comment.body }}</p>
+<h6>ID # {{comment.post.id}} + {{comment.id}}</h6>
+<h1>
+    {% csrf_token %} {{ form.as_p }}
+    <nav> 
+    <a href="{% url 'comment_view' pk=comment.id  %}"> Edit Comment</a>
+
+    <a href="{% url 'comment_create' %}"> New Comment</a>
+    </nav>
+    <br>
+    <a href="{% url 'post_list' %}">Homepage</a> 
+    <br>
+</h1>
+{% endfor %}
+
+{% endblock %}

@@ -84,7 +84,7 @@ python-versions = "*"
 version = "4.1.4"
 
 [metadata]
-content-hash = "cb9f13003516a75be84389cc702dd9d6af7469b9c8414857c5a79865fefb795d"
+content-hash = "be3ec750a9dedd5b2f26ddfdeaacc91e942367aa18d9df9b666621df923c7e4c"
 python-versions = "^3.8"
 
 [metadata.hashes]

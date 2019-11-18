@@ -1,4 +1,4 @@
 from django.apps import AppConfig
 
 class elenisdirtConfig(AppConfig):
-    name='elenisdirt'
+    name='elenisdirt2'

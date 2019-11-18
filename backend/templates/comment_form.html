@@ -1,6 +1,6 @@
-{% extends 'base.html' %}
-{% block content %}
-<h1>Dirt Factoid</h1>
+<!--posts/comments/new  linked from Comments-->
+{% extends 'base.html' %}{% block content %} 
+<h1>Comment</h1>
 <h5>All fields required</h5>
 <form method="POST">
   {% csrf_token %} {{ form.as_p }}
