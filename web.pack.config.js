@@ -9,9 +9,14 @@ module.exports = {
     extensions: ['.ts', '.tsx']
   },
 
+  entry:
+    path.join(process.cwd(), 'app/app.tsx'),
+
   module: {
     rules: [
       {
+        rules:[{ test: /\.tsx?$/, loader: 'awesome-typescript-loader' }], 
+        resolve: {extensions: ['.js', '.jsx', '.react.js', '.ts', '.tsx']},
         test: /\.ts(x?)$/,
         exclude: /node_modules/,
         use: [
